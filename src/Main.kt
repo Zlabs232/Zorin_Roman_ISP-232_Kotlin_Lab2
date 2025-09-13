@@ -15,5 +15,13 @@ fun main() {
     val number = readln().toInt()
     if (number in 10..50) println("Число $number входит в диапазон 10 - 50") else println("Число $number не входит в диапазон 10 - 50")
 
-
+    //Task 4
+    print("Введите один символ: ")
+    val char = readln()[0]
+    when {
+        char in '0'..'9' -> println("Это цифра")
+        char in 'a'..'z' || char in 'A'..'Z' -> println("Это буква латинского алфавита")
+        char == ' ' -> println("Это пробел")
+        else -> println("Это спецсимвол")
+    }
 }
