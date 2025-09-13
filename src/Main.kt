@@ -24,4 +24,11 @@ fun main() {
         char == ' ' -> println("Это пробел")
         else -> println("Это спецсимвол")
     }
+
+    //Task 5
+    val multiplier = 5
+    repeat(10) { i ->
+        val number = i + 1
+        println("$multiplier x $number = ${multiplier * number}")
+    }
 }
