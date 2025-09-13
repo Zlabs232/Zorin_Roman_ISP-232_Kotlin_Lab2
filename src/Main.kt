@@ -32,10 +32,24 @@ fun main() {
         println("$multiplier x $number = ${multiplier * number}")
     }
 
-    // Task 6
+    //Task 6
     val films = listOf("Интерстеллар", "Начало", "Матрица", "Криминальное чтиво", "Побег из Шоушенка")
     for (film in films) {
         println("Фильм: $film, длина названия: ${film.length} символов")
     }
+
+    //Task 7
+    print("Введите ваше имя: ")
+    val name = readln()
+    print("Введите ваш возраст: ")
+    val userAge = readln().toInt()
+    print("Введите ваш любимый цвет: ")
+    val color = readln()
+
+    val ageWord = if (userAge % 10 == 1 && userAge % 100 != 11) "год"
+    else if (userAge % 10 in 2..4 && userAge % 100 !in 12..14) "года"
+    else "лет"
+
+    println("Привет, $name! Тебе $userAge $ageWord, и ты любишь $color.")
 
 }
