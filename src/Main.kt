@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
     //Task 1
     print("Введите ваш уровень: ")
@@ -11,4 +9,11 @@ fun main() {
     //Task 2
     val age = readln().toInt()
     if (age < 12) println("Вы ребёнок") else if (age <= 17) println("Вы подросток") else println("Вы взрослый")
+
+    //Task 3
+    print("Введите число от 1 до 100: ")
+    val number = readln().toInt()
+    if (number in 10..50) println("Число $number входит в диапазон 10 - 50") else println("Число $number не входит в диапазон 10 - 50")
+
+
 }
