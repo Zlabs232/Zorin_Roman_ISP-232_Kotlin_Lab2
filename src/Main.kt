@@ -31,4 +31,11 @@ fun main() {
         val number = i + 1
         println("$multiplier x $number = ${multiplier * number}")
     }
+
+    // Task 6
+    val films = listOf("Интерстеллар", "Начало", "Матрица", "Криминальное чтиво", "Побег из Шоушенка")
+    for (film in films) {
+        println("Фильм: $film, длина названия: ${film.length} символов")
+    }
+
 }
