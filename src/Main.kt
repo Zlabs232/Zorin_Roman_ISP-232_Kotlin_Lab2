@@ -8,4 +8,7 @@ fun main() {
     val bonus = if (level < 10) 10 else if (level < 50) 30 else 100
     println("Ваш статус: $status, вы получаете бонус +$bonus HP")
 
+    //Task 2
+    val age = readln().toInt()
+    if (age < 12) println("Вы ребёнок") else if (age <= 17) println("Вы подросток") else println("Вы взрослый")
 }
