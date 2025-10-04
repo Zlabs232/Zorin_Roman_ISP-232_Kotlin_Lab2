@@ -52,4 +52,6 @@ fun main() {
 
     println("Привет, $name! Тебе $userAge $ageWord, и ты любишь $color.")
 
+    
+
 }
